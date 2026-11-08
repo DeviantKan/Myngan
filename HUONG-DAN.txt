@@ -1,0 +1,19 @@
+CHỌN HAY — BỘ WEBSITE AFFILIATE CÓ TRANG QUẢN TRỊ
+
+1) Tạo project tại https://supabase.com/
+2) Mở SQL Editor > New query. Dán toàn bộ file supabase-setup.sql rồi Run.
+3) Vào Project Settings > API / API Keys. Sao chép Project URL và anon/public hoặc publishable key.
+4) Mở config.js, thay 2 giá trị PASTE_... bằng thông tin vừa lấy. Chỉ dùng public/anon/publishable key. KHÔNG dùng service_role/secret key.
+5) Tạo tài khoản quản trị: Supabase > Authentication > Users > Add user. Tạo email và mật khẩu cho chính bạn. Không bật đăng ký công khai cho người lạ.
+6) Tạo GitHub repository Public tên chonhay tại https://github.com/
+7) Upload TOÀN BỘ file trong thư mục này vào thư mục gốc repository.
+8) GitHub > repository Settings > Pages > Deploy from a branch > main > /(root) > Save.
+9) Sau khi xuất bản, link website: https://TEN-GITHUB.github.io/chonhay/
+10) Link quản trị: https://TEN-GITHUB.github.io/chonhay/admin.html
+11) Đăng nhập trang quản trị, nhập tên, danh mục, giá, mô tả, URL ảnh HTTPS và link Affiliate Shopee rồi Lưu. Có thể sửa/xóa sản phẩm trong danh sách.
+
+LƯU Ý:
+- Mẫu này dùng Supabase làm database và đăng nhập; GitHub Pages chỉ host website. Hai dịch vụ có gói miễn phí nhưng có giới hạn sử dụng/chính sách có thể thay đổi.
+- SQL mẫu cho phép mọi user đã xác thực của project thao tác bảng products. Vì vậy chỉ tạo user quản trị cho người tin cậy; không bật public sign-up.
+- Trước khi dùng thật, thay link Shopee mẫu bằng link Affiliate được Shopee cấp. Dùng ảnh bạn có quyền sử dụng và ghi rõ website có thể nhận hoa hồng.
+- Nếu website báo lỗi, kiểm tra Project URL/key, SQL đã chạy và tài khoản đã được tạo trong Authentication > Users.
